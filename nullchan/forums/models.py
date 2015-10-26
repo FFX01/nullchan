@@ -25,6 +25,12 @@ class Thread(TimeStampedModel):
 class Comment(TimeStampedModel):
     body = models.TextField()
     thread = models.ForeignKey(Thread)
+    parent = models.ForeignKey(
+        'self',
+        related_name='replies',
+        blank=True,
+        null=True
+    )
 
     def __str__(self):
         return "Thread: %s - Comment ID: %d" % (self.thread.title, self.id)

@@ -1,0 +1,440 @@
+/*=============================================================================
+    Imports
+=============================================================================*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,600italic,700,700italic,800,800italic);
+
+/*=============================================================================
+    Global Styles
+=============================================================================*/
+
+body {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    background-color: #1C1C29;
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2.5em;
+}
+
+h5 {
+    font-size: 2em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.heavy {
+    font-weight: 800;
+}
+
+
+/*=============================================================================
+    Grid Styles
+=============================================================================*/
+
+.row {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+
+/* full width */
+.col-1-1 {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* half width */
+.col-1-2 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* thirds */
+.col-1-3 {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-2-3 {
+    float: left;
+    width: 66.66%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* fourths */
+.col-1-4 {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-2-4 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-3-4 {
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* fifths */
+.col-1-5 {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-2-5 {
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-3-5 {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-4-5 {
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* sixths */
+.col-1-6 {
+    float: left;
+    width: 16.66%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-2-6 {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-3-6 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-4-6 {
+    float: left;
+    width: 66.66%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-5-6 {
+    float: left;
+    width: 83.33%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* sevenths */
+.col-1-7 {
+    float: left;
+    width: 14.28%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-2-7 {
+    float: left;
+    width: 28.56%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-3-7 {
+    float: left;
+    width: 42.84%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-4-7 {
+    float: left;
+    width: 57.12%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-5-7 {
+    float: left;
+    width: 71.4%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-6-7 {
+    float: left;
+    width: 85.68%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* eighths */
+.col-1-8 {
+    float: left;
+    width: 12.5%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-2-8 {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-3-8 {
+    float: left;
+    width: 37.5%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-4-8 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-5-8 {
+    float: left;
+    width: 62.5%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-6-8 {
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-7-8 {
+    float: left;
+    width: 87.5%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* ninths */
+.col-1-9 {
+    float: left;
+    width: 11.11%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-2-9 {
+    float: left;
+    width: 22.22%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-3-9 {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-4-9 {
+    float: left;
+    width: 44.44%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-5-9 {
+    float: left;
+    width: 55.55%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-6-9 {
+    float: left;
+    width: 66.66%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-7-9 {
+    float: left;
+    width: 77.77%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-8-9 {
+    float: left;
+    width: 88.88%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* tenths */
+.col-1-10 {
+    float: left;
+    width: 10%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-2-10 {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-3-10 {
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-4-10 {
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-5-10 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-6-10 {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-7-10 {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-8-10 {
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.col-9-10 {
+    float: left;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/*=============================================================================
+    Nav Styles
+=============================================================================*/
+
+nav {
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    color: #79798F;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1,1.1);
+}
