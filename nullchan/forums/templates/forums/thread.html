@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block content %}
     <div class="row">
@@ -33,7 +34,7 @@
             {% for comment in comments %}
                 <div class="comment">
                     <p>{{comment.body}}</p>
-                    <button id="comment-reply">Reply</button>
+                    <button class="comment-reply-btn">Reply</button>
                     <form class="comment-form-reply" method="POST">
                         {% csrf_token %}
                         {{comment_form}}
